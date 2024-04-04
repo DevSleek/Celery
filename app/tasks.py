@@ -20,3 +20,4 @@ def test_task():
         house.price = price
         # house.location_date = location_date
         house.save()
+
