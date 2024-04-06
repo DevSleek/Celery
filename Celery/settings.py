@@ -137,6 +137,6 @@ CELERY_RESULT_BACKEND = "redis://localhost:6379"
 CELERY_BEAT_SCHEDULE = {
     "test_task": {
         "task": "app.tasks.test_task",
-        "schedule": crontab(hour="*/3"),
+        "schedule": crontab(minute='*/1')
     },
 }
